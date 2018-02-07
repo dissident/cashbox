@@ -6,3 +6,4 @@ services:
 before_install:
  - cp config/config.yml.sample config/config.yml
  - cp config/database.yml.sample config/database.yml
+ - psql -c 'create database cashbox;' -U postgres
